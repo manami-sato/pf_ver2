@@ -1,0 +1,40 @@
+$colorBlue:#5995A8;
+// $colorSemiTpBlue:rgba(89, 150, 168, 0.5);
+$colorSemiTpBlue:rgba(139, 207, 228, 0.5);
+$colorGold:rgba(187, 166, 111, 0.7);
+
+@mixin btn(){
+	box-shadow: 0 0 55px $colorSemiTpBlue;
+	border-radius: 20px;
+	font-weight: bold;
+	transition: 0.3s background, 0.3s color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+@mixin ttlTxtSet($mTop:100px,$mBottom:60px) {
+	margin: $mTop auto $mBottom;
+	width: 40vw;
+	min-width: 400px;
+	display: flex;
+	justify-content: space-around;
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+@mixin tab($bottom:-13px,$bcColor:transparent,$width:0) {
+	content: "";
+	display: block;
+	border-radius: 3px;
+	width: $width;
+	height: 6px;
+	background:$bcColor;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom:$bottom;
+	margin: auto;
+	transition: ease-in-out 0.4s width, ease-in-out 0.4s background;
+}

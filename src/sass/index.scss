@@ -1,0 +1,286 @@
+@import "ress";
+@import "ver";
+@import "common";
+@import "web";
+
+/* -----------------------------
+▼about▼
+----------------------------- */
+.icon {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  box-shadow: 0 0 55px $colorBlue;
+  margin: auto 0;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.kana {
+  margin-left: 25px;
+  font-size: 1.6rem;
+}
+
+.pTxt {
+  line-height: 2.8rem;
+
+  span {
+    display: block;
+    margin-top: 15px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  .pTxt1 {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
+  .pTxt2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* -----------------------------
+▲about▲
+----------------------------- */
+
+h2 {
+  font-size: 3.6rem;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.ttl{
+  text-align: center;
+
+}
+
+.index__ttl {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: $colorBlue;
+  text-shadow: 0 0 40px #fff;
+}
+
+main > section {
+  width: 80vw;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 7vh 0;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.index__wrap {
+  width: 100%;
+  min-height: calc(86vh - 140px);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .index__contents {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.btnBox {
+  margin-top: 20px;
+}
+
+/* -----------------------------
+▼index__firstView▼
+----------------------------- */
+.index__firstView {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .index__first--ttl{
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+  }
+  .index__first--wrap{
+    writing-mode:vertical-rl;
+    text-align: left;
+
+    .index__first--concept{
+      font-size: 6rem;
+      letter-spacing: 1.1rem;
+      color: $colorBlue;
+      font-weight: bold;
+      // margin-top: 2rem;
+      display: inline-block;
+    }
+    .index__first--txt{
+      font-size: 1.7rem;
+      letter-spacing: 0.2rem;
+      height: 90%;
+      margin: auto 0;
+      padding-right: 20px;
+    }
+  }
+  span{
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.indexName {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.mainWrap {
+  display: flex;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.mainIcon {
+  width: 440px;
+  height: 440px;
+  border-radius: 220px;
+  background-color: #fff;
+}
+
+/* -----------------------------
+▲main▲
+----------------------------- */
+
+/* -----------------------------
+▼works▼
+----------------------------- */
+.indexWorksImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  img {
+    height: 90%;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.indexworks__wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.indexFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 30%;
+  padding: 0 0 70px 30px;
+}
+
+
+/* arrow */
+.arrow {
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: darken($colorBlue, 15%);
+  }
+  &::after {
+    left: 170px;
+    transition: 0.2s ease-in-out;
+  }
+  span{
+    &::before {
+      left: 187px;
+      transform: rotate(45deg);
+      top: 18px;
+    }
+    &::after {
+      left: 187px;
+      transform: rotate(315deg);
+      top: 10px;
+    }
+  }
+}
+
+#works{
+  .sort {
+    margin: 0 10px 10px 0;
+  }
+  .index__ttl {
+    margin-top: 10px;
+    &::before {
+      content: "";
+      display: block;
+    }
+  }
+  .index__contents {
+    position: relative;
+  }
+}
+
+.worksCircle {
+  display: flex;
+  width: 45px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 15%;
+  left: 4%;
+  div {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 35%;
+    padding-top: 35%;
+  }
+}
+
+
+/* スライド */
+.index__contents--works {
+  overflow: hidden;
+  width: 100%;
+  height: calc(86vh - 140px);
+  li {
+    width: 100%;
+  }
+}
+#circleGet {
+  background-color: #c7b78f;
+  transition: ease-in-out 0.3s;
+}
+
+/* -----------------------------
+▲works▲
+----------------------------- */

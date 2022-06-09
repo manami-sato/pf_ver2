@@ -1,0 +1,157 @@
+.works__img {
+  width: 100%;
+  height: 250px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.works__ttl {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px auto 1.3rem;
+}
+
+.works__txt {
+  font-size: 1.4rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.sort {
+  margin: 0 10px 7px 0;
+}
+
+main {
+  width: 85vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 22px;
+  color: $colorBlue;
+  margin-right: 30px;
+  margin-bottom: 7px;
+  text-shadow: 0 0 40px #fff;
+}
+
+.ttlTxt {
+  @include ttlTxtSet(30px, 40px);
+}
+
+.works__wrap {
+  display: flex;
+  transform: translateY(-30px);
+  opacity: 0;
+  flex-wrap: wrap;
+}
+
+.sampleTxt {
+  margin: 100px 80px 100px 0;
+  font-size: 2rem;
+  color: rgb(136, 136, 136);
+  display: inline-block;
+  height: auto;
+  text-align: center;
+}
+
+.tab {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  &:hover {
+    &::after {
+      content: "";
+      width: 90%;
+      background: $colorBlue;
+    }
+  }
+  &::after {
+    @include tab();
+  }
+  #setWorks {
+    animation: worksFadein 0.3s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fix {
+  position: relative;
+  display: inline-block;
+  &::after {
+    @include tab(-13px, $colorBlue, 90%);
+  }
+}
+
+@keyframes worksFadein {
+  0% {
+    opacity: 0;
+    transition: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transition: translateY(0);
+  }
+}
+.graphic__other{
+  display: none;
+  margin: 130px auto 0;
+  font-size:2.5rem;
+}
+
+
+.web__sort {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  margin: 0 auto 80px;
+  .web__sort--wrap {
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    > * {
+      height: 44px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .web__sort--ttl {
+    background: #5996a8a9;
+    padding: 0 25px 0 30px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 22px 0 0 22px;
+    + div {
+      width: 280px;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 20px;
+    }
+  }
+  .web__sort--item {
+    text-shadow: none;
+    font-weight: normal;
+    transition: 0.1s ease-in-out text-shadow, 0.1s ease-in-out color,
+      0.1s ease-in-out font-weight;
+    &:hover {
+      text-shadow: 0 0 15px rgba(89, 150, 168, 0.3);
+      color: $colorGold;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .set--web__sort--item {
+    text-shadow: 0 0 15px rgba(89, 150, 168, 0.3);
+    color: $colorGold;
+    font-weight: bold;
+  }
+}

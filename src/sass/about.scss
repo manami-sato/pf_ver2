@@ -1,0 +1,110 @@
+@import "ress";
+@import "ver";
+@import "common";
+@import "web";
+
+main {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* -----------------------------
+▼about▼
+----------------------------- */
+.icon {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  box-shadow: 0 0 55px $colorBlue;
+  margin: 20px 0;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+.name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.kana {
+  margin-left: 25px;
+  font-size: 1.6rem;
+}
+.pTxt {
+  line-height: 2.8rem;
+  span {
+    display: block;
+    margin-top: 15px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  .pTxt1 {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  .pTxt2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* -----------------------------
+▲about▲
+----------------------------- */
+
+.ttlTxt {
+  @include ttlTxtSet();
+}
+
+.profileWrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 60px;
+  opacity: 0;
+  transform: translateY(-30px);
+  div {
+    width: 50%;
+    min-width: 400px;
+  }
+}
+
+main section section {
+  margin: 180px 0;
+}
+.aboutTxt > div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 2rem;
+}
+.tools {
+  padding: 0 10px;
+  font-weight: bold;
+}
+.aboutTxt a {
+  color: $colorBlue;
+  text-decoration: underline;
+}
+.awardTtl {
+  font-weight: bold;
+  &::after {
+    content: "-";
+    padding: 0 10px;
+  }
+}
+
+.index__ttl {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: $colorBlue;
+}
+
+.sort {
+  margin-right: 15px;
+}

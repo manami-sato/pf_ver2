@@ -1,0 +1,33 @@
+doctype html
+html(lang="ja")
+	head
+		include _head.pug
+		link(rel="stylesheet",href="css/webPage.css")
+		title 友人ポートフォリオ｜佐藤真奈実 ポートフォリオ
+	body
+		header
+			include _nav.pug
+		main
+			div.webPageWrap
+				div.webPageInfo
+					div.webPageImg
+						img(src="img/web_02_murata.png")
+					div.sort 2年前期
+					h2 友人ポートフォリオ
+					dl
+						dt 作業形態
+						dd 個人制作
+						dt 役割
+						dd デザイン／コーディング
+						dt 使用言語
+						dd pug／Sass／JavaScript／jQuery／JSON
+					div.link
+						a(href="http://click.ecc.ac.jp/ecc/msatou/p_test/",target="site")
+							span ウェブサイトへ
+						a(href="#",target="github")
+							span GitHubへ
+				div.conceptsheet
+					img(src="img/conceptsheet_02_murata.png")
+			a(href="works_web.html",target="page",class="arrow")
+				span back
+		include _foot.pug

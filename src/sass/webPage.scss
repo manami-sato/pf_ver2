@@ -1,0 +1,138 @@
+@import "ress";
+@import "ver";
+@import "common";
+@import "web";
+
+main {
+  width: 80vw;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: calc(100vh - 170px);
+}
+.webPageWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.webPageInfo {
+  width: 40%;
+  min-width: 400px;
+  padding: 40px 0;
+}
+.webPageImg {
+  margin-bottom: 40px;
+  img {
+    width: 100%;
+  }
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: $colorBlue;
+  margin-bottom: 30px;
+}
+
+/* dl */
+dl {
+  text-shadow: 0px 0px 10px #cfcfcf;
+  dt {
+    font-size: 1.4rem;
+    margin-bottom: 7px;
+  }
+  dd {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: darken($colorBlue,10%);
+    margin-bottom: 25px;
+  }
+}
+
+/* link */
+.link {
+  display: grid;
+  grid-template-columns: 60% 10px calc(40% - 10px);
+  grid-template-rows: 50px 10px 40px;
+  width: 85%;
+  margin: 0 auto;
+  a {
+    font-weight: bold;
+    border-radius: 25px;
+    display: block;
+    box-shadow: 0 0 55px $colorSemiTpBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    overflow: hidden;
+    position: relative;
+    transition:0.2s background,0.2s color;
+    &:nth-child(1) {
+      grid-column: 1/4;
+      grid-row: 1;
+      background: $colorGold;
+      color: #fff;
+      &:hover {
+        background: darken($colorGold, 10%);
+      }
+    }
+    &:nth-child(2) {
+      grid-column: 1;
+      grid-row: 3;
+      background: rgba(255, 255, 255, 0.7);
+      color: $colorBlue;
+      &:hover {
+        color: darken($colorBlue,10%);
+        background: rgba(247, 247, 247, 0.5);
+      }
+    }
+    &:nth-child(3) {
+      grid-column: 3;
+      grid-row: 3;
+      background: rgba(255, 255, 255, 0.7);
+      color: $colorBlue;
+      &:hover {
+        color: darken($colorBlue,10%);
+        background: rgba(247, 247, 247, 0.5);
+      }
+    }
+  }
+}
+
+/* arrow */
+.arrow {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 auto;
+  line-height: 36px;
+  &::after {
+    left: -50px;
+  }
+  span {
+    &::before {
+      left: -36px;
+      transform: rotate(315deg);
+    }
+    &::after {
+      left: -36px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+/* conceptsheet */
+.conceptsheet {
+  width: 55%;
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}

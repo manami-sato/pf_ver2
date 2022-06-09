@@ -1,0 +1,119 @@
+doctype html
+html(lang="ja")
+	head
+		include _head.pug
+		link(rel="stylesheet", href="css/works_graphic.css")
+		title graphic｜佐藤真奈実 ポートフォリオ
+	body
+		header
+			include _nav.pug
+		main
+			h2.font.ttl works
+			div.font.ttlTxt
+				a(href="works_web.html",target="page").tab web site
+				div.fix graphic
+				a(href="works_practice.html",target="page").tab practice
+			include _webSort.pug
+			div.works__wrap
+				article.businessCard(data-year="1")
+					div.graphic__img
+						img(src="img/graphic_01_meishi_1.png",alt="1年名刺表")
+						img(src="img/graphic_01_meishi_2.png",alt="1年名刺裏")
+					div.graphic__info
+						div.graphic__info--ttl
+							h3 名刺
+							div.sort 1年（後期）
+						div.graphic__info--tool 使用ツール：Illustrator
+						div.graphic__info--txt 生きていく上で、私自身が経験してきたことを白のペンキとして塗り広げていくイメージでイラストを描き、制作しました。<br>こちらで掲載しているのは、前期に制作したものを後期にブラッシュアップしたものです。
+				article#koka.poster(data-year="1")
+					div.graphic__img
+						img(src="img/graphic_01_cw1.png",alt="紅香 - お香ポスター")
+					div.graphic__info
+						div.graphic__info--ttl
+							h3 紅香 - お香ポスター
+							div.sort 1年前期
+						div.graphic__info--tool 使用ツール：Illustrator
+						div.graphic__info--txt オリジナルのお香を注文することができる<br>サービスのポスターです。
+						a(href="koka.html",target="web").btn_yellow サイトを見る
+				article#candleNight.poster(data-year="1")
+					div.graphic__img
+						img(src="img/graphic_01_candlenight.png",alt="キャンドルナイト ポスター")
+					div.graphic__info
+						div.graphic__info--ttl
+							h3 キャンドルナイト ポスター
+							div.sort 1年後期
+						div.graphic__info--tool 使用ツール：Illustrator／Photoshop
+						div.graphic__info--txt 「中崎町キャンドルナイト」というイベントの<br>ポスターを授業で制作しました。
+				article#jishatecho(data-year="1")
+					div.jishatecho__wrap--1.graphic__img
+						img(src="img/graphic_01_cw2_1.png",alt="寺社手帖 ポスター")
+					div.jishatecho__wrap--2
+						div.graphic__img
+							img(src="img/graphic_01_cw2_2.png",alt="寺社手帖 ポスター掲示イメージ")
+						div.graphic__info
+							div.graphic__info--ttl
+								h3 寺社手帖 ポスター
+								div.sort 1年後期
+							div.graphic__info--tool 使用ツール：Illustrator／Photoshop
+							div.graphic__info--txt 電車内及び駅等に掲示していただく想定で<br>電子広告を制作しました。
+							a(href="jishatecho.html",target="web").btn_yellow サイトを見る
+				article#seinen(data-year="1")
+					div.graphic__img
+						img(src="img/graphic_01_book_1.png",alt="文庫本カバー")
+					div.graphic__info
+						div.graphic__info--ttl
+							h3 文庫本カバー
+							div.sort 1年後期
+						div.graphic__info--tool 使用ツール：Illustrator／Photoshop
+						div.graphic__info--txt タイトル、モチーフ自由のもと<br>文庫本カバーを制作しました。
+				article#userella(data-year="1")
+					div.graphic__img
+						img(src="img/graphic_01_group1.png",alt="userella アプリバナー")
+					div.graphic__info
+						div.graphic__info--ttl
+							h3 userella - アプリバナー
+							div.sort 1年後期
+						div.graphic__info--tool 使用ツール：Illustrator／Photoshop
+						div.graphic__info--txt LPサイトからアプリLPサイトに<br>飛んでもらう際のバナーです。
+						a(href="userella.html",target="web").btn_yellow サイトを見る
+				article#utakata(data-year="1")
+					div#utakata__wrap--1.graphic__img
+						img(src="img/graphic_01_utakata.png",alt="泡沫の砂")
+					div#utakata__wrap--2.graphic__info
+						div.graphic__info--ttl
+							h3 文庫本カバー
+							div.sort 1年後期
+						div.graphic__info--tool 使用ツール：Illustrator
+						div.graphic__info--txt 「泡沫の砂」という作品の表紙です。
+						div#utakata__wrap--3
+							div.graphic__img
+								img(src="img/graphic_01_utakata_1.png",alt="泡沫の砂2")
+								img(src="img/graphic_01_utakata_2.png",alt="泡沫の砂3")
+							p ボツ版
+				article.businessCard(data-year="2")
+					div.graphic__img
+						img(src="img/graphic_02_meishi_1.png",alt="2年名刺表")
+						img(src="img/graphic_02_meishi_2.png",alt="2年名刺裏")
+					div.graphic__info
+						div.graphic__info--ttl
+							h3 名刺
+							div.sort 2年前期
+						div.graphic__info--tool 使用ツール：Illustrator／Photoshop
+						div.graphic__info--txt 趣味で撮影した写真を利用して名刺を作りたいと思っていたので制作しました。
+				article.businessCard2(data-year="2")
+					div.graphic__info
+						div.graphic__info--ttl
+							h3 友人名刺
+							div.sort 2年前期
+						div.graphic__info--tool 使用ツール：Illustrator／Photoshop
+						div.graphic__info--txt 陶芸を学ぶ友人のために制作しました。肩書きが多かったので窮屈な見た目にならないように意識しました。
+					div.graphic__img
+						img(src="img/graphic_02_muratameishi_1.png",alt="名刺表")
+						img(src="img/graphic_02_muratameishi_2.png",alt="名刺裏")
+				div.graphic__other.font coming soon						
+			include _contact.pug
+		include _scrollTop.pug
+		include _foot.pug	
+		script(src="js/common.js")
+		script(src="js/works.js")
+		script(src="js/graphic.js")

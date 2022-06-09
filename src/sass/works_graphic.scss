@@ -1,0 +1,235 @@
+@import "ress";
+@import "common";
+@import "web";
+
+.works__wrap {
+  justify-content: space-around;
+  article {
+    margin: 60px 0;
+    &:last-child {
+      margin: 60px 0 0;
+    }
+  }
+}
+
+.web__sort {
+  margin: 0 auto 20px;
+}
+
+.graphic__img {
+  img {
+    box-shadow: 0 0 55px $colorSemiTpBlue;
+  }
+}
+
+.graphic__info--ttl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.graphic__info--txt {
+  font-size: 1.4rem;
+  margin: 20px auto 30px;
+  text-align: center;
+}
+
+.graphic__info--tool {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.sort {
+  margin-bottom: 7px;
+}
+
+/* 名刺 */
+.businessCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+  .graphic__img {
+    width: 45%;
+    min-width: 380px;
+    img {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 5vh;
+      }
+    }
+  }
+  .graphic__info {
+    width: 40%;
+    min-width: 380px;
+    margin: 50px 0;
+  }
+  .graphic__info--txt {
+    width: 90%;
+  }
+  .graphic__info--ttl {
+    margin: 0;
+  }
+}
+/* ポスター共通 */
+.poster {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .graphic__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    img {
+      height: 100%;
+    }
+  }
+}
+#candleNight {
+  margin: 60px 0 96px;
+}
+
+/* 寺社手帖 */
+#jishatecho {
+  display: flex;
+  justify-content: space-around;
+  .jishatecho__wrap--1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  .jishatecho__wrap--2 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .graphic__img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .graphic__info {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* 文庫本 */
+#seinen {
+  width: 30%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .graphic__img {
+    img {
+      width: 90%;
+    }
+  }
+}
+
+/* userella */
+#userella {
+  width: 60%;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+
+/* 泡沫の砂 */
+#utakata {
+  display: flex;
+  justify-content: space-around;
+  > div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+  }
+  #utakata__wrap--1 {
+    height: 90vh;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      box-shadow: none;
+    }
+  }
+  #utakata__wrap--2 {
+    flex-direction: column;
+    justify-content: center;
+    .graphic__info--ttl {
+      margin: 0;
+    }
+  }
+  #utakata__wrap--3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    div {
+      text-align: center;
+      img {
+        width: 40%;
+        &:nth-child(1) {
+          margin-right: 30px;
+        }
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      margin: 15px auto 0;
+    }
+  }
+}
+
+/* 名刺 */
+.businessCard2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+  .graphic__img {
+    width: 50%;
+    // min-width: 380px;
+    display: flex;
+    img {
+      width: 50%;
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+  .graphic__info {
+    width: 30%;
+    margin: 50px 0;
+  }
+  .graphic__info--txt {
+    width: 90%;
+  }
+  .graphic__info--ttl {
+    margin: 0;
+  }
+}

@@ -1,0 +1,45 @@
+html,body,a{
+	cursor: none;
+}
+
+.mouse{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: -8px;
+	left: -8px;
+	transform: translate(0,0);
+	pointer-events: none;
+	transition: 0.2s width ease-in-out, 0.2s height ease-in-out, 0.2s top ease-in-out, 0.2s left ease-in-out,0.2s background-color ease-in-out;
+}
+
+.link{
+	display: block;
+	border:tomato 3px solid;
+	color: tomato;
+	background-color: #fff;
+	font-weight: bold;
+	width: 150px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	text-decoration: none;
+	transition: 0.2s background-color,0.2s color;
+	z-index: 100;
+}
+.link:hover{
+	background-color: tomato;	
+	color: #fff;
+}
+
+#linkHover{
+	top: -15px;
+	left: -15px;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(153, 205, 50, 0.5);
+}

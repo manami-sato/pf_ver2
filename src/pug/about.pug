@@ -1,0 +1,50 @@
+doctype html
+html(lang="ja")
+	head
+		include _head.pug
+		link(rel="stylesheet", href="css/about.css")
+		title Philosophia｜Amane Portfolio site
+	body
+		header
+			include _nav.pug
+		main
+			h2.ttl.font about
+			div.profileWrap
+				div
+					div.name
+						div.index__ttl 佐藤 真奈実
+						div.kana さとう まなみ
+					div.pTxt
+						span.pTxt1
+							|ECCコンピュータ専門学校 マルチメディア研究学科<br>
+							|Webデザインコース 2年 2023年卒業予定
+						span.pTxt1 フロントエンドエンジニア志望
+						span.pTxt2
+							|小学生の頃から簡単なHTMLやCSSに触れ、コーディングの楽しさを感じていたことからこの分野を目指しました。<br>
+							|シンプルで誰が見てもわかりやすく、文法に沿った・SEOを意識したコードを書けるように勉強中です。<br>
+						span.pTxt2 趣味：10年くらいカメラを触っています！
+				img(src="img/icon.jpg",alt="佐藤真奈実").icon
+			section
+				h3.ttlTxt.font skills
+				div.aboutTxt
+					div
+						div.sort
+						span.tools
+					div
+						div.sort
+						span.tools
+					div
+						div.sort
+						span.tools
+			section
+				h3.ttlTxt.font award history
+				div.aboutTxt
+					div
+						div.sort 2020年度
+						span.awardTtl 3月 「ECC EXPO」入賞
+						a(href="web_findfont.html",target="page") find font
+			include _contact.pug
+		include _scrollTop.pug
+		include _foot.pug
+		script(src="js/common.js")
+		script(src="js/about.js")

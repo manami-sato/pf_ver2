@@ -1,0 +1,74 @@
+doctype html
+html(lang="ja")
+	head
+		include _head.pug
+		link(rel="stylesheet", href="css/index.css")
+		title 佐藤真奈実 ポートフォリオ
+	body
+		header
+			nav.font
+				ul
+					li
+						a(href="#").nav__link home
+					li
+						a(href="#about").nav__link about
+					li
+						a(href="#works").nav__link works
+					li
+						a(href="#contact").nav__link contact
+		main
+			h2.font.ttl manami sato portfolio
+			section#about
+				h2.font about
+				div.index__wrap
+					div.index__contents
+						div.name
+							div.index__ttl 佐藤 真奈実
+							div.kana さとう まなみ
+						div.pTxt
+							span.pTxt1
+								|ECCコンピュータ専門学校 マルチメディア研究学科<br>
+								|Webデザインコース 2年 2023年卒業予定
+							span.pTxt1 フロントエンドエンジニア志望
+							//- span.pTxt2
+							//- 	|コードをどんなところに注意して書いているか<br>
+							//- 	|どういうフロントエンドエンジニアになりたいのか
+							//- span.pTxt2 趣味：10年くらいカメラを触っています！
+					div.icon
+						img(src="./img/icon.jpg",alt="佐藤真奈実")
+				div.btnBox
+					a(href="about.html",target="page").btn_white more
+			section#works
+				h2.font recommended works
+				div.index__wrap
+					ul.index__contents--works
+						li.indexworks__wrap
+							div.indexFilter
+								div
+									div.sort 1年後期
+									div.sort 個人制作
+								a(href="jishatecho.html",target="page").index__ttl.arrow
+									span 寺社手帖
+							div.indexWorksImg
+								img(src="img/web_01_jishatecho.png",alt="寺社手帖")
+						li.index__wrap3.indexworks__wrap
+							div.indexFilter
+								div
+									div.sort 1年前期
+									div.sort グループ制作
+									div.sort Hack U参加
+									div.sort ECC EXPO入賞
+								a(href="findfont.html",target="page").index__ttl.arrow
+									span find font
+							div.indexWorksImg
+								img(src="img/web_01_findfont.png",alt="find font")
+					div.worksCircle
+						div#circleGet
+						div
+				div.btnBox
+					a(href="works_web.html",target="page").btn_white more
+			include _contact.pug
+		include _scrollTop.pug
+		include _foot.pug
+		script(src="js/common.js")
+		script(src="js/index.js")

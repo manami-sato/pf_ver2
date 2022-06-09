@@ -1,0 +1,32 @@
+doctype html
+html(lang="ja")
+	head
+		include _head.pug
+		link(rel="stylesheet", href="css/works_practice.css")
+		title practice｜佐藤真奈実 ポートフォリオ
+	body
+		header
+			include _nav.pug
+		main
+			h2.font.ttl works
+			div.font.ttlTxt
+				a(href="works_web.html",target="page").tab web site
+				a(href="works_graphic.html",target="page").tab graphic
+				div.fix practice
+			include _webSort.pug
+			div.works__wrap
+				article
+					div.works__ttl
+						h3
+						div
+							div.sort
+					div.works__txt
+					div.practiceBtn
+						a(target="web").btn_yellow more
+				div.graphic__other.font coming soon
+			include _contact.pug
+		include _scrollTop.pug
+		include _foot.pug
+		script(src="js/common.js")
+		script(src="js/works.js")
+		script(src="js/practice.js")
